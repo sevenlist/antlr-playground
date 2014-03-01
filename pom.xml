@@ -10,6 +10,14 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4</artifactId>
+            <version>4.2</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <!--
             Source directories are needed by profile "indy" (groovyc Ant task) and
