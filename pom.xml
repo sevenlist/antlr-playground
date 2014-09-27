@@ -4,19 +4,23 @@
 
     <artifactId>antlr-playground</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4</artifactId>
+            <version>${antlr.version}</version>
+        </dependency>
+    </dependencies>
+
     <parent>
         <groupId>com.sevenlist</groupId>
         <artifactId>groovy-project</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.antlr</groupId>
-            <artifactId>antlr4</artifactId>
-            <version>4.2</version>
-        </dependency>
-    </dependencies>
+    <properties>
+        <antlr.version>4.3</antlr.version>
+    </properties>
 
     <build>
         <!--
@@ -30,7 +34,7 @@
             <plugin>
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4-maven-plugin</artifactId>
-                <version>4.2</version>
+                <version>${antlr.version}</version>
                 <executions>
                     <execution>
                         <goals>
